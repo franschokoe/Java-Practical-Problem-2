@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner; // we need the scanner to allow input on the terminal
 
 public class UserInforConsole {
@@ -28,18 +29,17 @@ public class UserInforConsole {
         int ageMonths = age * 12 ;
         int daysWork = 260;
         dailySalary = annualSalary/daysWork;
-//        double formattedDailySalary
+        DecimalFormat formattedDailySalary = new DecimalFormat("#,##");
         // OUTPUT  OF THE USER INPUT
-
+        System.out.println();
         System.out.println("Employee Information");
-        System.out.println("Full name: " + firstName + lastName);
+        System.out.println("Full name: " + firstName +" " + lastName);
         System.out.println("Age(months): " + ageMonths);
         System.out.println("Age(yrs): " +age);
-        System.out.println("Daily salary: R %2f%" + dailySalary);
+        System.out.println("Daily salary: R " + formattedDailySalary.format(dailySalary));
 
 
-
-
+        scanner.close();
 
 
     }
