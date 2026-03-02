@@ -44,3 +44,6 @@ public class UserInforConsole {
 
     }
 }
+
+// Author of the code
+// Frans Chokoe & Karabo MALEBANA
